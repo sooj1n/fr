@@ -1,6 +1,8 @@
+from api.knn import knn_api
+from api.lr import lr_api
 
 def predict():
-    length = float(input("물고기의 무게를 입력하세요: "))
+    length = float(input("물고기의 크기를 입력하세요: "))
 
     ## weight 예측 선형회귀 API 호출
     weight = lr_api(length)
